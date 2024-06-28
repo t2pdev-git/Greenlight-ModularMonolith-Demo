@@ -1,0 +1,25 @@
+=================================
+>>> In Progress <<<
+*** Create an Initiative User (duplicated from User module)
+- See MJ Course: 04.7 - Asynchronous Communication around 9:00 minutes in
+- Need a new Migration in the Initiative module for the new Greenlight.Modules.Initiatives.Domain.User
+
+=================================
+ *** Create an Email Sender Module and consume the UserRegisteredIntegrationEvent
+ - See MJ Course: 04.7 - Asynchronous Communication around 9:00 minutes in
+
+=================================
+*** Additional Use Cases
+- Initiative: DO Event Storming
+- Initiative: Submit for Approval
+- Initiative: Delete Draft
+- Initiative: Cancel (must not be in Draft or Sustainment state -> think about this)
+
+=================================
+*** Tenant Support
+
+    builder.Property(i => i.TenantId)
+      .HasColumnType(PostgresDbTypes.TenantIdType)
+      .HasMaxLength(PostgresDbTypes.TenantIdLength)
+      .IsRequired();
+=================================

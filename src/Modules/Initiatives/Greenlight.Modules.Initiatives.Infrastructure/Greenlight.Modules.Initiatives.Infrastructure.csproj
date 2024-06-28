@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Greenlight.Common.Infrastructure\Greenlight.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Common\Greenlight.Common.Presentation\Greenlight.Common.Presentation.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Initiatives.Application\Greenlight.Modules.Initiatives.Application.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Initiatives.Presentation\Greenlight.Modules.Initiatives.Presentation.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Database\Migrations\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="SonarAnalyzer.CSharp">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+</Project>

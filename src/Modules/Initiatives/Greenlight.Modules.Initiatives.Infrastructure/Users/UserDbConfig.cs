@@ -1,0 +1,21 @@
+﻿using Greenlight.Modules.Initiatives.Domain.Users;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Greenlight.Modules.Initiatives.Infrastructure.Users;
+
+internal sealed class UserDbConfig : IEntityTypeConfiguration<User>
+{
+    public void Configure(EntityTypeBuilder<User> builder)
+    {
+        builder.HasKey(u => u.Id);
+
+        builder.Property(u => u.FirstName).HasMaxLength(50);
+
+        builder.Property(u => u.LastName).HasMaxLength(50);
+
+        builder.Property(u => u.Email).HasMaxLength(100);
+
+        builder.HasIndex(u => u.Email).IsUnique();
+    }
+}

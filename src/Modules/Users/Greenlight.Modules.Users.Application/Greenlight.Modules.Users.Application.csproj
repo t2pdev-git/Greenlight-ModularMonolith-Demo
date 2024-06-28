@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Folder Include="Users\GetUser\" />
+    <Folder Include="Users\GetUserPermissions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Greenlight.Common.Application\Greenlight.Common.Application.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Users.Domain\Greenlight.Modules.Users.Domain.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Users.IntegrationEvents\Greenlight.Modules.Users.IntegrationEvents.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

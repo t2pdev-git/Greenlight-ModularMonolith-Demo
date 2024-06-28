@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Greenlight.Common.Presentation\Greenlight.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Users\Greenlight.Modules.Users.IntegrationEvents\Greenlight.Modules.Users.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Initiatives.Application\Greenlight.Modules.Initiatives.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Greenlight.Common.Infrastructure\Greenlight.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Users.Application\Greenlight.Modules.Users.Application.csproj" />
+    <ProjectReference Include="..\Greenlight.Modules.Users.Presentation\Greenlight.Modules.Users.Presentation.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Greenlight.Modules.Users.IntegrationTests" />
+		<InternalsVisibleTo Include="Greenlight.IntegrationTests" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="NewFolder\" />
+	</ItemGroup>
+
+</Project>
